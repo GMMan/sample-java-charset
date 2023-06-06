@@ -20,6 +20,7 @@ public class XrosLoaderCharsetDecoder extends CharsetDecoder {
                 int b = in.get() & 0xff;
                 char ch = XrosLoaderCharset.CHARMAP[b];
                 if (ch == 0) {
+                    // in.position(in.position() - 1);
                     // return CoderResult.unmappableForLength(1);
 
                     // Decode as ASCII
