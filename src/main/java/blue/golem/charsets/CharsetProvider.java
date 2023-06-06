@@ -10,7 +10,7 @@ import blue.golem.charsets.xrosloader.XrosLoaderCharset;
 
 public class CharsetProvider extends java.nio.charset.spi.CharsetProvider {
 
-    static final String XROS_LOADER_CHARSET_NAME = "xros-loader";
+    static final String XROS_LOADER_CHARSET_NAME = "x-xros-loader";
     static final String TAMAGOTCHI_MIX_CHARSET_NAME = "x-tamagotchi-mix";
 
     Map<String, Charset> charsetMap = new HashMap<>();
